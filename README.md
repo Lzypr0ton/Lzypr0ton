@@ -1,92 +1,53 @@
-<div align="center">
+import { useState, useEffect, useRef, useCallback } from "react";
 
-<!-- Animated banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sachin%20Shivade&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Engineering%20Student%20%7C%20Code%20%7C%20Learn%20%7C%20Repeat&descAlignY=55&descSize=16" />
+// \u2500\u2500\u2500 DATA \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+const REPOS = [
+  { id: "face", emoji: "\ud83c\udfad", old: "face_recognize_attendance_system", name: "FaceIn \u00b7 Attendance System", desc: "\ud83c\udfad Smart attendance via real-time face recognition. No more proxy bunk! Built with Python & OpenCV.", tags: ["python","opencv","face-recognition","computer-vision"], lang: "Python", color: "#3572A5", stars: 1 },
+  { id: "py", emoji: "\ud83d\udc0d", old: "PythonSeries_lvl1", name: "Python Zero \u2192 Hero \u00b7 Beginner Series", desc: "\ud83d\udc0d Complete Python series from absolute zero to confident coder. Great for beginners & revision alike.", tags: ["python","tutorial","beginner","learning"], lang: "Python", color: "#3572A5", stars: 0 },
+  { id: "lc", emoji: "\u2694\ufe0f", old: "Leetcode", name: "LeetCode Grind \u00b7 C++ Solutions", desc: "\u2694\ufe0f My daily LeetCode battle log \u2014 auto-synced C++ solutions. DSA grind for coding interviews.", tags: ["leetcode","dsa","cpp","interview-prep"], lang: "C++", color: "#f34b7d", stars: 0 },
+  { id: "dsa", emoji: "\ud83d\udcda", old: "DSA_practical_IT-SE_Sppu", name: "SPPU DSA Practicals \u00b7 IT/SE", desc: "\ud83d\udcda All DSA practicals for SPPU IT/SE Second Year. Clean C++ \u2014 save your semester!", tags: ["sppu","dsa","cpp","university"], lang: "C++", color: "#f34b7d", stars: 0 },
+  { id: "oop", emoji: "\ud83c\udfd7\ufe0f", old: "OOP_practical_IT-SE_Sppu", name: "SPPU OOP Practicals \u00b7 IT/SE", desc: "\ud83c\udfd7\ufe0f OOP practicals for SPPU IT/SE. Well-structured C++ programs from the syllabus.", tags: ["sppu","oop","cpp","university"], lang: "C++", color: "#f34b7d", stars: 0 },
+];
 
-<!-- Typing animation -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=500&lines=Hey+there!+I'm+Sachin+%F0%9F%91%8B;Engineering+Student+%F0%9F%8E%93;Python+%7C+C%2B%2B+%7C+DSA+Enjoyer;Building+cool+stuff+one+commit+at+a+time+%F0%9F%9A%80" alt="Typing SVG" />
-</a>
+const SKILLS = ["Python","C++","Git","GitHub","OpenCV","DSA","OOP","LeetCode"];
+const TYPING_LINES = [
+  "Hey there! I'm Sachin \ud83d\udc4b",
+  "Engineering Student \ud83c\udf93",
+  "Python | C++ | DSA Enjoyer",
+  "Building cool stuff one commit at a time \ud83d\ude80",
+  "The name's lazy, the code is not \u26a1",
+];
 
-<br/>
-
-<!-- About badges -->
-![](https://img.shields.io/badge/Status-Learning%20%26%20Building-brightgreen?style=flat-square&logo=statuspage)
-![](https://img.shields.io/badge/Mood-Caffeinated%20☕-brown?style=flat-square)
-![](https://img.shields.io/badge/Open%20To-Collabs%20%26%20Opportunities-blue?style=flat-square)
-
-</div>
-
----
-
-## 🧠 About Me
-
-```python
-class Sachin:
-    name       = "Sachin Shivade"
-    alias      = "Lzypr0ton"  # lazy proton ⚡
-    role       = "Engineering Student"
-    loves      = ["DSA", "Python", "Building things", "Late-night debugging"]
-    currently  = "Levelling up — one LeetCode problem at a time 🏋️"
-    fun_fact   = "The name's lazy, the code is not."
-```
-
----
-
-## 🚀 Tech Stack
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-</div>
-
----
-
-## 📦 Featured Projects
-
-| 🔬 Project | 💡 What it does | 🛠 Stack |
-|---|---|---|
-| [face_recognize_attendance_system](https://github.com/Lzypr0ton/face_recognize_attendance_system) | Marks attendance using face recognition — no more proxy bunk! | Python, OpenCV |
-| [PythonSeries_lvl1](https://github.com/Lzypr0ton/PythonSeries_lvl1) | Complete beginner Python series — good for revision & learning | Python |
-| [LeetCode Solutions](https://github.com/Lzypr0ton/https-github.com-Lzypr0ton-Leetcode) | Auto-synced LeetCode grind via LeetHub | C++ |
-| [DSA Practicals (SPPU)](https://github.com/Lzypr0ton/DSA_practical_IT-SE_Sppu) | University DSA practical programs | C++ |
-| [OOP Practicals (SPPU)](https://github.com/Lzypr0ton/OOP_practical_IT-SE_Sppu) | University OOP practicals for IT/SE students | C++ |
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Lzypr0ton&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lzypr0ton&layout=compact&theme=tokyonight&hide_border=true" height="150"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Lzypr0ton&theme=tokyonight&hide_border=true" />
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Lzypr0ton/Lzypr0ton/output/github-contribution-grid-snake-dark.svg" />
-</div>
-
----
-
-<div align="center">
-
-*"The name's lazy, the code is not."* ⚡
-
-![Visitor Count](https://komarev.com/ghpvc/?username=Lzypr0ton&color=58A6FF&style=flat-square&label=Profile+Views)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
-
-</div>
+// \u2500\u2500\u2500 PARTICLE CANVAS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+function ParticleCanvas() {
+  const canvasRef = useRef(null);
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    let W = canvas.width = canvas.offsetWidth;
+    let H = canvas.height = canvas.offsetHeight;
+    const particles = Array.from({ length: 60 }, () => ({
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4,
+      r: Math.random() * 2 + 1,
+      alpha: Math.random() * 0.5 + 0.1,
+    }));
+    let raf;
+    const draw = () => {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+        if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(88,166,255,${p.alpha})`;
+        ctx.fill();
+      });
+      particles.forEach((a, i) => particles.slice(i + 1).forEach(b => {
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 100) {
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+          ctx.strokeStyle = `rgba(88
