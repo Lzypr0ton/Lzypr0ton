@@ -1,22 +1,6 @@
-GlowUp
-🏠 Home
-💻 Terminal
-⚙️ Builder
-👁️ Preview
-📦 Repos
-📄 README
-📄 Your README
-Personalized from your Builder settings. Copy it and paste into github.com/new → repo named Lzypr0ton
+LinkedIn: https://www.linkedin.com/in/sachin-shivade-2751a1315  
 
-⚡ 3 Steps to go live
-1
-Create a new repo at github.com/new — name it exactly: Lzypr0ton (must match your username)
-2
-Set it to Public and check ✅ Add a README file
-3
-Copy README below → click the pencil ✏️ on GitHub → paste → Commit changes!
-📄 README.md — Lzypr0ton/README.md
-📋 Copy README
+Portfolio: https://lazy-panda-portfolio-f7z2.onrender.com/
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sachin%20Shivade&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Engineering%20Student%20%7C%20Code%20%7C%20Learn%20%7C%20Repeat&descAlignY=55&descSize=16" />
