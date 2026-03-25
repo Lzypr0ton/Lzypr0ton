@@ -1,78 +1,63 @@
-<div align="center">
+<div align="center"><!-- Wavy Header --><img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:9333EA&height=200&section=header&text=Sachin%20Shivade&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Engineering%20Student%20%7C%20Builder%20%7C%20Learner&descAlignY=60&descSize=18" /><!-- Typing Animation --><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&pause=900&color=6366F1&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+Sachin+👋;Engineering+Student+🎓;Python+%7C+C%2B%2B+%7C+DSA+Lover;Building+cool+stuff+🚀;Consistency+%3E+Motivation+⚡" /><br><br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sachin%20Shivade&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Engineering%20Student%20%7C%20Code%20%7C%20Learn%20%7C%20Repeat&descAlignY=55&descSize=16" />
+<!-- Badges --><img src="https://img.shields.io/badge/Status-Building%20🚀-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Mood-Code%20%2B%20Coffee%20☕-brown?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Open%20to-Collaborations-blue?style=for-the-badge" /><br><br>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Hey+there!+I'm+Sachin+%F0%9F%91%8B;Engineering+Student+%F0%9F%8E%93;Python+%7C+C%2B%2B+%7C+DSA+Enjoyer;Building+cool+stuff+%F0%9F%9A%80;The+name%27s+lazy%2C+the+code+is+not+%E2%9A%A1" />
-</a>
+<!-- Social --><a href="https://github.com/your-username">
+  <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github" />
+</a></div>---
 
-![](https://img.shields.io/badge/Status-Learning%20%26%20Building-brightgreen?style=flat-square)
-![](https://img.shields.io/badge/Mood-Caffeinated%20☕-brown?style=flat-square)
-![](https://img.shields.io/badge/Open%20To-Collabs-blue?style=flat-square)
+🚀 About Me
 
-</div>
-
----
-
-## 🧠 About Me
-
-```python
 class Sachin:
-    name      = "Sachin Shivade"
-    alias     = "Lzypr0ton"  # lazy proton ⚡
-    role      = "Engineering Student"
-    loves     = ["DSA", "Python", "Building things", "Late-night debugging"]
-    currently = "Levelling up — one LeetCode problem at a time 🏋️"
-    fun_fact  = "The name's lazy, the code is not."
-```
+    def __init__(self):
+        self.name = "Sachin Shivade"
+        self.role = "Engineering Student"
+        self.languages = ["Python", "C++"]
+        self.interests = ["DSA", "Problem Solving", "Building Projects"]
+        self.motto = "Consistency > Motivation ⚡"
+
+    def say_hi(self):
+        return "Thanks for visiting my profile!"
 
 ---
 
-## 🚀 Tech Stack
+⚡ Tech Stack
 
-<div align="center">
+<div align="center"><img src="https://skillicons.dev/icons?i=python,cpp,git,github,vscode,linux" /></div>---
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+📊 GitHub Stats
 
-</div>
+<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=tokyonight&border_radius=10" height="170" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=tokyonight&border_radius=10" height="170" /></div>---
 
----
+📈 Activity Graph
 
-## 📦 Featured Projects
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=your-username&theme=tokyo-night&area=true" />---
 
-| 🔬 Project | 💡 What it does | 🛠 Stack |
-|---|---|---|
-| [FaceIn](https://github.com/Lzypr0ton/face_recognize_attendance_system) | Smart attendance via face recognition | Python, OpenCV |
-| [Python Zero→Hero](https://github.com/Lzypr0ton/PythonSeries_lvl1) | Beginner Python series for revision | Python |
-| [LeetCode Grind](https://github.com/Lzypr0ton/Leetcode) | Daily DSA battle log | C++ |
-| [SPPU DSA](https://github.com/Lzypr0ton/DSA_practical_IT-SE_Sppu) | University DSA practicals | C++ |
-| [SPPU OOP](https://github.com/Lzypr0ton/OOP_practical_IT-SE_Sppu) | University OOP practicals | C++ |
+🧠 Currently Learning
+
+- 📌 Data Structures & Algorithms
+- 📌 Backend Development
+- 📌 Open Source Contribution
 
 ---
 
-## 📊 GitHub Stats
+🎯 Goals
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Lzypr0ton&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lzypr0ton&layout=compact&theme=tokyonight&hide_border=true" height="150"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Lzypr0ton&theme=tokyonight&hide_border=true" />
-</div>
+- 🚀 Become a strong problem solver
+- 💻 Build impactful real-world projects
+- 🌍 Contribute to open-source
 
 ---
 
-<div align="center">
+💬 Quote I Believe In
 
-*"The name's lazy, the code is not."* ⚡
+«"Small progress every day leads to big results."»
 
-![Visitor Count](https://komarev.com/ghpvc/?username=Lzypr0ton&color=58A6FF&style=flat-square&label=Profile+Views)
+---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
+<div align="center">✨ Thanks for visiting — let's build something amazing together!
 
 </div>
