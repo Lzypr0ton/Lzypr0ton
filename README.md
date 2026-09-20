@@ -17,6 +17,9 @@
 <a href="https://github.com/Lzypr0ton?tab=repositories">
   <img src="https://img.shields.io/badge/Projects-Browse-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
+<a href="https://leetcode.com/u/Lzypr0ton/">
+  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+</a>
 
 <br/><br/>
 
